@@ -50,12 +50,10 @@ img {
 
 .features-title-invisible {
   visibility: hidden;
-  margin: 0px;
 }
 
 .portfolio-title-invisible {
   visibility: hidden;
-  margin: 0px;
 }
 
 .address {
@@ -78,10 +76,11 @@ img {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
@@ -280,10 +279,11 @@ img {
   background-color: var(--dark-bg-color);
 }
 
-.footer-logo {
-  display: inline-block;
+.footer-logo-container {
   margin-bottom: 20px;
+}
 
+.footer-logo {
   font-family: 'Raleway' sans-serif;
   color: var(--secondary-bg-color);
   font-weight: 700;
@@ -342,9 +342,29 @@ img {
   margin-left: 8px;
 }
 
-.portfolio-list {
+.buttons-container {
+  margin-bottom: 50px;
+}
+
+.portfolio-card-set {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-left: -30px;
+}
+
+.card-item {
+  margin-bottom: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+.card-item:nth-child(n + 7) {
+  margin-bottom: 0px;
+}
+
+.card-item:nth-child(3n + 1) {
+  margin-left: 0px;
 }
 
 .portfolio-card {
@@ -353,16 +373,8 @@ img {
   border-right: 1px solid #eeeeee;
 }
 
-.portfolio-list .card-item + .card-item {
-  margin-left: 8px;
-}
-
 .portfolio-img {
   margin-bottom: 20px;
-}
-
-.card-item {
-  margin-bottom: 30px;
 }
 
 .portfolio-title {
