@@ -346,7 +346,7 @@ img {
   margin-bottom: 50px;
 }
 
-.portfolio-card-set {
+.card-set {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -30px;
