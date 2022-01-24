@@ -48,12 +48,17 @@ img {
   text-decoration: none;
 }
 
-.features-title-invisible {
+.title-invisible {
   visibility: hidden;
-}
-
-.portfolio-title-invisible {
-  visibility: hidden;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .address {
@@ -76,7 +81,7 @@ img {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -109,9 +114,12 @@ img {
   height: 80px;
 }
 
+.navigation {
+  margin-left: 93px;
+}
+
 .site-nav {
   display: flex;
-  margin-left: 93px;
 }
 
 .site-nav .item + .item {
@@ -197,6 +205,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .features-text {
@@ -249,13 +258,13 @@ img {
 
 .team-list .item {
   width: 270px;
-  height: 368px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-photo {
+.team-card {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -346,7 +355,7 @@ img {
   margin-bottom: 50px;
 }
 
-.card-set {
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -30px;
@@ -371,10 +380,10 @@ img {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-}
-
-.portfolio-img {
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
 }
 
 .portfolio-title {
